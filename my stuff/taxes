@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class ready {
+	public static void main(String[] args){
+		Scanner import = new Scanner(System.in);
+		//income
+		System.out.print("Enter employee name: ");
+		double emp = input.nextDouble();
+		System.out.print("Enter number of hours worked: ");
+		double hours = input.nextDouble();
+		System.out.print("Enter pay per hour: ");
+		double pph = input.nextDouble();
+		double overtime = hours - 40;
+		double overtimePph = pph * 1.5:
+		double gross = (hours * pph) + (overtime * overtimePph);
+		double ftr = (.12 * gross) + (.22 * gross);
+		double str = (.5 * gross);
+		double net = gross - (str + ftr);
+
+		System.out.println("Name: " + emp);
+		System.out.println("Regular hours: " + hours);
+		System.out.println("Regular Pay: " + pph):
+		if (overtime <= 0){
+			System.out.println("Overtime hours: 0 \n Overtime pay per hour: " + overtimePph);
+			}
+			else{
+			System.out.println("Overtime hours: " + overtime);
+			System.out.println("OT Pay per Hour: $" + overtimePph);
+			}
+		System.out.println("Gross pay: " + gross);
+		System.out.println("_____________________");
+		System.out.printf("Federal Taxes: %0.2f", ftr);
+		System.out.printf("State Taxes: %0.2f" , str);
+		System.out.printf("Net pay: " + net);
+	}
+}
